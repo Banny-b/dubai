@@ -1,0 +1,76 @@
+.header {
+    width: 100%;
+    max-width: 1920px;
+    background: #272727;
+    padding: 10px;
+    &__container {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        max-width: 1802px;
+        padding: 20px 0 26px 0;
+        margin: 0 auto;
+    }
+    &__logo {
+        margin-right: 152px;
+    }
+    &__logo-img {
+        width: 184px;
+        height: 63px;
+    }
+    &__nav {
+        margin-right: 500px;
+    }
+    &__nav-list {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+    &__nav-link {
+        font-family: var(--second-family);
+        font-weight: 600;
+        font-size: 14px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #fff;
+        &.active {
+            color: #fcd54c;
+            text-decoration: underline;
+        }
+    }
+    &__btn {
+        width: 165px;
+        background: #fcd54c;
+        padding: 12px 14px;
+        font-family: var(--font-family);
+        font-weight: 600;
+        font-size: 14px;
+        color: #000;
+        text-align: center;
+        text-decoration: none;
+        margin-right: 120px;
+    }
+    &__switch {
+        display: flex;
+        gap: 8px;
+        margin-right: 53px;
+    }
+    &__switch-lang {
+        font-family: var(--second-family);
+        font-weight: 600;
+        font-size: 14px;
+        text-transform: uppercase;
+        color: #929292;
+        cursor: pointer;
+        &.current {
+            color: #fcd54c;
+        }
+    }
+    &__phone {
+        font-family: var(--second-family);
+        font-weight: 600;
+        font-size: 16px;
+        color: #fff;
+        text-decoration: none;
+    }
+}
