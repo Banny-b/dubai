@@ -5,7 +5,12 @@ header.header
         nav.header__nav 
             ul.header__nav-list 
                 li.header__nav-item
-                    a.header__nav-link.active(href="") BUY
+                    button.header__nav-link.active(href="", id="buy-link") BUY 
+                        span.header__nav-arrow
+                    section.header__dropdown(id="menu") 
+                        a.header__dropdown-item(href="") Category number one
+                        a.header__dropdown-item(href="") Apartments in Dubai
+                        a.header__dropdown-item(href="") Category number twenty five
                 li.header__nav-item
                     a.header__nav-link(href="") BLOG
                 li.header__nav-item
@@ -14,6 +19,8 @@ header.header
                     a.header__nav-link(href="") CONTACT
         a.header__btn(href="") Book a consultation 
         .header__switch 
-            btn.header__switch-lang.current EN 
-            btn.header__switch-lang UA
+            button.header__switch-lang.current EN 
+            button.header__switch-lang UA
         a.header__phone(href="") +38 044 123 45 67
+        svg.header__burger(width="24", height="24") 
+            use(href="../images/header/burger.svg#burger-icon")
