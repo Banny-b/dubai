@@ -1,6 +1,6 @@
 .header {
     width: 1920px;
-    background: #272727;
+    background: var(--dark-color);
     padding: 10px 60px 0 60px; //*
     &__container {
         display: flex;
@@ -33,13 +33,13 @@
         font-size: 14px;
         text-decoration: none;
         text-transform: uppercase;
-        color: #fff;
+        color: var(--white-color);
         background: none;
         border: none;
         padding: 0;
         transition: 0.3s ease-in-out;
         &.active {
-            color: #fcd54c;
+            color: var(--acceny-color);
             text-decoration: underline;
         }
         &:hover {
@@ -53,7 +53,7 @@
         height: 0;
         border-left: 5px solid transparent;
         border-right: 5px solid transparent;
-        border-top: 5px solid #fff;
+        border-top: 5px solid var(--white-color);
         transition: transform 0.3s ease-in-out;
         &.open {
             transform: rotate(180deg);
@@ -62,8 +62,8 @@
     &__dropdown {
         position: absolute;
         display: none;
-        background-color: #272727;
-        border: 1px solid #979797;
+        background-color: var(--dark-color);
+        border: 1px solid var(--grey-1);
         z-index: 1;
         min-width: 227px;
         margin-top: 13px;
@@ -74,12 +74,12 @@
         font-family: var(--second-family);
         font-weight: 600;
         font-size: 14px;
-        color: #fff;
+        color: var(--white-color);
         padding: 12px 16px;
         text-decoration: none;
         &:hover {
-            color: #272727;
-            background-color: #fcd54c;
+            color: var(--dark-color);
+            background-color: var(--acceny-color);
         }
     }
     &__dropdown.show {
@@ -94,7 +94,7 @@
         font-weight: 600;
         font-size: 14px;
         width: 165px;
-        background: #fcd54c;
+        background: var(--acceny-color);
         padding: 12px 14px;
         color: #000;
         text-align: center;
@@ -102,8 +102,8 @@
         margin-right: 120px;
         transition: 0.3s ease-in-out;
         &:hover {
-            color: #fff;
-            background: #f39f04;
+            color: var(--white-color);
+            background: var(--yellow-2);
         }
     }
     &__switch {
@@ -116,24 +116,24 @@
         font-weight: 600;
         font-size: 14px;
         text-transform: uppercase;
-        color: #929292;
+        color: v--grey-2;
         background: none;
         border: none;
         padding: 0;
         cursor: pointer;
         transition: 0.3s ease-in-out;
         &.current {
-            color: #fcd54c;
+            color: var(--acceny-color);
         }
         &:hover {
-            color: #fff;
+            color: var(--white-color);
         }
     }
     &__phone {
         font-family: var(--second-family);
         font-weight: 600;
         font-size: 16px;
-        color: #fff;
+        color: var(--white-color);
         text-decoration: none;
         transition: 0.3s ease-in-out;
         &:hover {
@@ -145,3 +145,17 @@
     }
 }
 
+/* Десктопы до 1920px */
+@media (max-width: 1920px) {
+
+}
+
+/* Планшеты до 768px */
+@media (max-width: 768px) {
+
+}
+
+/* Мобильные телефоны от 320px до 767px */
+@media (min-width: 320px) and (max-width: 767px) {
+
+}
