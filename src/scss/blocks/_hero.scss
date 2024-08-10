@@ -1,0 +1,424 @@
+.hero {
+    background: var(--dark-color);
+    width: 100%;
+    &__slider {
+        position: relative;
+    }
+    &__slider-item-1 {
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+    &__slider-inner {
+        position: relative;
+    }
+    &__slider-inner-content {
+        position: absolute;
+    }
+    &__slider-inner-uptext {
+        font-family: var(--first-family);
+        font-weight: 400;
+        text-transform: uppercase;
+        color: var(--white-color);
+    }
+    &__slider-inner-title {
+        font-family: var(--fifth-family);
+        font-weight: 700;
+        line-height: 104%;
+        text-transform: capitalize;
+        color: var(--white-color);
+    }
+    &__title-span {
+        font-family: var(--fifth-family);
+        font-weight: 700;
+        line-height: 104%;
+        text-transform: capitalize;
+        color: var(--acceny-color);
+    }
+    &__slider-inner-link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    }
+    &__slider-inner-subtext {
+        font-family: var(--first-family);
+        font-weight: 700;
+        color: var(--white-color);
+    }
+    &__slider-item-2 {
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+    &__slider-item-3 {
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+    &__dots {
+        position: absolute;
+        background: var(--dark-color);
+        width: 100%;
+    }
+    &__dots-list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__dots-item {
+        display: flex;
+        align-items: center;
+    }
+    &__dots-item-num {
+        font-family: var(--second-family);
+        font-weight: 700;
+        line-height: 40%;
+        color: var(--white-color);
+        &.active {
+            color: var(--acceny-color);
+        }
+    }
+    &__dots-item-text {
+        font-family: var(--first-family);
+        font-weight: 600;
+        line-height: 162%;
+        color: var(--white-color);
+    }
+    &__slider-arrows {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 3;
+    }
+    &__slider-arrows::before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 0;
+        bottom: 0;
+        width: 1px;
+        background-color: var(--white-color);
+        transform: translateX(-50%);
+    }
+    &__slider-arrows p {
+        margin: 0;
+    }
+    &__slider-prev {
+        font-family: var(--second-family);
+        font-weight: 700;
+        line-height: 120%;
+        letter-spacing: 0.2em;
+        color: var(--white-color);
+    }
+    &__slider-next {
+        font-family: var(--second-family);
+        font-weight: 700;
+        line-height: 120%;
+        letter-spacing: 0.2em;
+        color: var(--white-color);
+    }
+}
+
+/* Десктопы */
+@media (min-width: 1200px) and (max-width: 1920px) {
+    .hero {
+        padding: 0 60px 0 60px;
+        &__slider-item-1 {
+            background-image: url("../images/hero/pic-1-1920.jpg");
+            min-height: 971px;
+        }
+        &__slider-inner {
+            // max-width: 742px;
+            padding: 277px 0 0 354px;
+        }
+        &__slider-inner-content {
+            top: 318px;
+            left: 386px;
+            max-width: 714px;
+        }
+        &__slider-inner-uptext {
+            font-size: 16px;
+            margin-bottom: 22px;
+        }
+        &__slider-inner-title {
+            font-size: 96px;
+            margin-bottom: 46px;
+        }
+        &__title-span {
+            font-size: 96px;
+        }
+        &__slider-inner-link {
+            max-width: 216px;
+            transition: 0.3s ease-in-out;
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+        &__slider-inner-subtext {
+            font-size: 20px;
+            margin-right: 6px;
+        }
+        &__slider-inner-arrow {
+            width: 11px;
+            height: 20px;
+        }
+        &__slider-item-2 {
+            background-image: url("../images/hero/pic-2-1920.jpg");
+            min-height: 971px;
+        }
+        &__slider-item-3 {
+            background-image: url("../images/hero/pic-3-1920.jpg");
+            min-height: 971px;
+        }
+        &__social {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+            gap: 20px;
+            position: absolute;
+            top: 40px;
+            right: 25px;
+        }
+        &__social-img {
+            transition: 0.3s ease-in-out;
+            &:hover {
+                opacity: 0.5;
+            }
+        }
+        &__dots {
+            bottom: -308px;
+            right: 0;
+            padding: 40px 60px;
+            // max-width: 1080px;
+            max-width: clamp(800px, calc(33.33vw + 400px), 1080px);
+        }
+        &__dots-list {
+            // gap: 160px;
+            gap: clamp(90px, 5vw, 160px);
+        }
+        &__dots-item {
+            flex-direction: row;
+        }
+        &__dots-item-num {
+            font-size: 60px;
+            margin-right: 37px;
+        }
+        &__dots-item-text {
+            font-size: 16px;
+            max-width: 116px;
+        }
+        &__dots-mobile {
+            display: none;
+        }
+        &__slider-arrows {
+            max-width: 200px;
+            top: -66px;
+            left: 438px;
+        }
+        &__slider-arrows p {
+            padding: 0 18px; // Отступы по бокам для расстояния от черты
+        }
+        &__slider-prev {
+            font-size: 20px;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+            &:hover {
+                color: var(--grey-3);
+            }
+        }
+        &__slider-next {
+            font-size: 20px;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+            &:hover {
+                color: var(--grey-3);
+            }
+        }
+    }
+}
+
+/* Планшеты */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .hero {
+        padding: 0 36px 0 36px;
+        &__slider-item-1 {
+            background-image: url("../images/hero/pic-1-768.jpg");
+            min-height: 374px;
+        }
+        &__slider-inner {
+            // max-width: 229px;
+            padding: 39px 0 0 30px;
+        }
+        &__slider-inner-content {
+            top: 85px;
+            left: 53px;
+            max-width: 354px;
+        }
+        &__slider-inner-uptext {
+            font-size: 10px;
+            margin-bottom: 4px;
+        }
+        &__slider-inner-title {
+            font-size: 50px;
+            margin-bottom: 8px;
+        }
+        &__title-span {
+            font-size: 50px;
+        }
+        &__slider-inner-subtext {
+            font-size: 16px;
+            margin-right: 5px;
+        }
+        &__slider-inner-arrow {
+            width: 8px;
+            height: 14px;
+        }
+        &__slider-item-2 {
+            background-image: url("../images/hero/pic-2-768.jpg");
+            min-height: 374px;
+        }
+        &__slider-item-3 {
+            background-image: url("../images/hero/pic-3-768.jpg");
+            min-height: 374px;
+        }
+        &__social {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+            gap: 13px;
+            position: absolute;
+            top: 20px;
+            right: 12px;
+        }
+        &__dots {
+            bottom: -102px;
+            right: 0;
+            padding: 10px 24px;
+            // max-width: 541px;
+            max-width: clamp(541px, calc(50vw + 161px), 800px);
+        }
+        &__dots-list {
+            gap: 35px;
+        }
+        &__dots-item {
+            flex-direction: row;
+        }
+        &__dots-item-num {
+            font-size: 40px;
+            margin-right: 13px;
+        }
+        &__dots-item-text {
+            font-size: 12px;
+            max-width: 88px;
+        }
+        &__dots-mobile {
+            display: none;
+        }
+        &__slider-arrows {
+            max-width: 110px;
+            top: -33px;
+            left: 17px;
+        }
+        &__slider-arrows p {
+            padding: 0 10px; // Отступы по бокам для расстояния от черты
+        }
+        &__slider-prev {
+            font-size: 10px;
+        }
+        &__slider-next {
+            font-size: 10px;
+        }
+    }
+}
+
+/* Мобильные телефоны */
+@media (min-width: 360px) and (max-width: 767px) {
+    .hero {
+        padding: 0 36px 0 36px;
+        &__slider-item-1 {
+            background-image: url("../images/hero/pic-1-360.jpg");
+            min-height: 362px;
+        }
+        &__slider-inner {
+            // max-width: 195px;
+            padding: 26px 0 0 23px;
+        }
+        &__slider-inner-content {
+            top: 52px;
+            left: 38px;
+            max-width: 214px;
+        }
+        &__slider-inner-uptext {
+            font-size: 10px;
+            margin-bottom: 7px;
+        }
+        &__slider-inner-title {
+            font-size: 30px;
+            margin-bottom: 58px;
+        }
+        &__title-span {
+            font-size: 30px;
+        }
+        &__slider-inner-subtext {
+            font-size: 12px;
+            margin-right: 7px;
+        }
+        &__slider-inner-arrow {
+            width: 8px;
+            height: 14px;
+        }
+        &__slider-item-2 {
+            background-image: url("../images/hero/pic-2-360.jpg");
+            min-height: 362px;
+        }
+        &__slider-item-3 {
+            background-image: url("../images/hero/pic-3-360.jpg");
+            min-height: 362px;
+        }
+        &__social {
+            display: none;
+        }
+        &__dots {
+            display: none;
+        }
+        &__dots-mobile {
+            padding: 20px 0 6px 0;
+            // max-width: 288px;
+            max-width: clamp(288px, calc(100vw - 72px), 695px);
+            border-bottom: 1px solid var(--acceny-color);
+        }
+        &__dots-list {
+            gap: 28px;
+        }
+        &__dots-item {
+            flex-direction: column;
+        }
+        &__dots-item-num {
+            font-size: 40px;
+            margin-right: auto;
+            margin-bottom: 18px;
+        }
+        &__dots-item-text {
+            font-size: 10px;
+            max-width: 78px;
+            min-height: 24px;
+        }
+        &__slider-arrows {
+            max-width: 94px;
+            top: -40px;
+            left: 15px;
+        }
+        &__slider-arrows p {
+            padding: 0 8px; // Отступы по бокам для расстояния от черты
+        }
+        &__slider-prev {
+            font-size: 10px;
+        }
+        &__slider-next {
+            font-size: 10px;
+        }
+    }
+}

@@ -21,7 +21,6 @@
     "gulp-plumber": "^1.2.1",
     "gulp-pug": "^5.0.0",
     "gulp-sass": "^5.1.0",
-    "gulp-server-livereload": "^1.9.2",
     "gulp-sourcemaps": "^3.0.0",
     "gulp-uglify": "^3.0.2",
     "pug": "^3.0.3",

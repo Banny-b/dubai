@@ -1,161 +1,253 @@
 .header {
-    width: 1920px;
     background: var(--dark-color);
-    padding: 10px 60px 0 60px; //*
+    width: 100%;
     &__container {
         display: flex;
         align-items: center;
-        width: 1800px;
-        padding: 20px 0 26px 0;
+        justify-content: space-between;
         margin: 0 auto;
     }
-    &__logo {
-        margin-right: 152px;
-    }
-    &__logo-img {
-        width: 184px;
-        height: 63px;
-    }
-    &__nav {
-        margin-right: 620px; //*
-    }
-    &__nav-list {
-        display: flex;
-        align-items: center;
-        gap: 40px;
-    }
-    &__nav-link {
-        display: inline-flex;
-        align-items: center;
-        position: relative;
-        font-family: var(--second-family);
-        font-weight: 600;
-        font-size: 14px;
-        text-decoration: none;
-        text-transform: uppercase;
-        color: var(--white-color);
-        background: none;
-        border: none;
-        padding: 0;
-        transition: 0.3s ease-in-out;
-        &.active {
-            color: var(--acceny-color);
-            text-decoration: underline;
+}
+
+/* Десктопы */
+@media (min-width: 1200px) and (max-width: 1920px) {
+    .header {
+        max-width: 1920px;
+        padding: 10px 60px 0 60px; //*
+        &__container {
+            // width: 1800px;
+            padding: 20px 0 26px 0;
         }
-        &:hover {
-            opacity: 0.5;
+        &__logo {
+            margin-right: 152px;
         }
-    }
-    &__nav-arrow {
-        display: inline-block;
-        margin-left: 5px;
-        width: 0;
-        height: 0;
-        border-left: 5px solid transparent;
-        border-right: 5px solid transparent;
-        border-top: 5px solid var(--white-color);
-        transition: transform 0.3s ease-in-out;
-        &.open {
-            transform: rotate(180deg);
+        &__logo-img {
+            width: 184px;
+            height: 63px;
         }
-    }
-    &__dropdown {
-        position: absolute;
-        display: none;
-        background-color: var(--dark-color);
-        border: 1px solid var(--grey-1);
-        z-index: 1;
-        min-width: 227px;
-        margin-top: 13px;
-        transition: opacity 0.3s ease-in-out;
-    }
-    &__dropdown-item {
-        display: block;
-        font-family: var(--second-family);
-        font-weight: 600;
-        font-size: 14px;
-        color: var(--white-color);
-        padding: 12px 16px;
-        text-decoration: none;
-        &:hover {
-            color: var(--dark-color);
-            background-color: var(--acceny-color);
+        &__nav {
+            // margin-right: 620px;
+            margin-right: auto;
         }
-    }
-    &__dropdown.show {
-        display: block;
-        opacity: 1;
-    }
-    &__dropdown.hide {
-        opacity: 0;
-    }
-    &__btn {
-        font-family: var(--first-family);
-        font-weight: 600;
-        font-size: 14px;
-        width: 165px;
-        background: var(--acceny-color);
-        padding: 12px 14px;
-        color: #000;
-        text-align: center;
-        text-decoration: none;
-        margin-right: 120px;
-        transition: 0.3s ease-in-out;
-        &:hover {
+        &__nav-list {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+        &__nav-link {
+            display: inline-flex;
+            align-items: center;
+            position: relative;
+            font-family: var(--second-family);
+            font-weight: 600;
+            font-size: 14px;
+            text-decoration: none;
+            text-transform: uppercase;
             color: var(--white-color);
-            background: var(--yellow-2);
+            background: none;
+            border: none;
+            padding: 0;
+            transition: 0.3s ease-in-out;
+            &.active {
+                color: var(--acceny-color);
+                text-decoration: underline;
+            }
+            &:hover {
+                opacity: 0.5;
+            }
         }
-    }
-    &__switch {
-        display: flex;
-        gap: 8px;
-        margin-right: 53px;
-    }
-    &__switch-lang {
-        font-family: var(--second-family);
-        font-weight: 600;
-        font-size: 14px;
-        text-transform: uppercase;
-        color: v--grey-2;
-        background: none;
-        border: none;
-        padding: 0;
-        cursor: pointer;
-        transition: 0.3s ease-in-out;
-        &.current {
-            color: var(--acceny-color);
+        &__nav-arrow {
+            display: inline-block;
+            margin-left: 5px;
+            width: 0;
+            height: 0;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 5px solid var(--white-color);
+            transition: transform 0.3s ease-in-out;
+            &.open {
+                transform: rotate(180deg);
+            }
         }
-        &:hover {
+        &__dropdown {
+            position: absolute;
+            display: none;
+            background-color: var(--dark-color);
+            border: 1px solid var(--grey-1);
+            z-index: 1;
+            min-width: 227px;
+            margin-top: 13px;
+            transition: opacity 0.3s ease-in-out;
+        }
+        &__dropdown-item {
+            display: block;
+            font-family: var(--second-family);
+            font-weight: 600;
+            font-size: 14px;
             color: var(--white-color);
+            padding: 12px 16px;
+            text-decoration: none;
+            &:hover {
+                color: var(--dark-color);
+                background-color: var(--acceny-color);
+            }
+        }
+        &__dropdown.show {
+            display: block;
+            opacity: 1;
+        }
+        &__dropdown.hide {
+            opacity: 0;
+        }
+        &__btn {
+            font-family: var(--first-family);
+            font-weight: 600;
+            font-size: 14px;
+            width: 165px;
+            background: var(--acceny-color);
+            padding: 12px 14px;
+            color: var(--black-color);
+            text-align: center;
+            text-decoration: none;
+            margin-right: 120px;
+            transition: 0.3s ease-in-out;
+            &:hover {
+                color: var(--white-color);
+                background: var(--yellow-2);
+            }
+        }
+        &__switch {
+            display: flex;
+            gap: 8px;
+            margin-right: 53px;
+        }
+        &__switch-lang {
+            font-family: var(--second-family);
+            font-weight: 600;
+            font-size: 14px;
+            text-transform: uppercase;
+            color: var(--grey-2);
+            background: none;
+            border: none;
+            padding: 0;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+            &.current {
+                color: var(--acceny-color);
+            }
+            &:hover {
+                color: var(--white-color);
+            }
+        }
+        &__phone {
+            font-family: var(--second-family);
+            font-weight: 600;
+            font-size: 16px;
+            color: var(--white-color);
+            text-decoration: none;
+            transition: 0.3s ease-in-out;
+            &:hover {
+                opacity: 0.5;
+            }
+        }
+        &__burger {
+            display: none;
         }
     }
-    &__phone {
-        font-family: var(--second-family);
-        font-weight: 600;
-        font-size: 16px;
-        color: var(--white-color);
-        text-decoration: none;
-        transition: 0.3s ease-in-out;
-        &:hover {
-            opacity: 0.5;
+}
+
+/* Планшеты */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .header {
+        padding: 15px 36px 0 36px; //*
+        &__container {
+            //width: 696px;
+            padding: 13px 0 13px 0; //*
+        }
+        &__logo {
+            margin-right: 96px;
+        }
+        &__logo-img {
+            width: 179px;
+            height: 59px;
+        }
+        &__nav {
+            display: none;
+        }
+        &__btn {
+            font-family: var(--first-family);
+            font-weight: 600;
+            font-size: 12px;
+            width: 142px;
+            background: var(--acceny-color);
+            padding: 10px 12px;
+            color: var(--black-color);
+            text-align: center;
+            text-decoration: none;
+            margin-right: 36px;
+        }
+        &__switch {
+            display: flex;
+            gap: 8px;
+            margin-right: 22px;
+        }
+        &__switch-lang {
+            font-family: var(--second-family);
+            font-weight: 600;
+            font-size: 14px;
+            text-transform: uppercase;
+            color: var(--grey-2);
+            background: none;
+            border: none;
+            padding: 0;
+            cursor: pointer;
+            &.current {
+                color: var(--acceny-color);
+            }
+        }
+        &__phone {
+            font-family: var(--second-family);
+            font-weight: 600;
+            font-size: 16px;
+            color: var(--white-color);
+            text-decoration: none;
+            margin-right: 27px;
+        }
+        &__burger {
+            display: block;
         }
     }
-    &__burger {
-        display: none;
+}
+
+/* Мобильные телефоны */
+@media (min-width: 360px) and (max-width: 767px) {
+    .header {
+        padding: 15px 36px 0 36px; //*
+        &__container {
+            //width: 287px;
+            padding: 20px 0; //*
+        }
+        &__logo {
+            margin-right: 156px;
+        }
+        &__logo-img {
+            width: 114px;
+            height: 49px;
+        }
+        &__nav {
+            display: none;
+        }
+        &__btn {
+            display: none;
+        }
+        &__switch {
+            display: none;
+        }
+        &__phone {
+            display: none;
+        }
+        &__burger {
+            display: block;
+        }
     }
-}
-
-/* Десктопы до 1920px */
-@media (max-width: 1920px) {
-
-}
-
-/* Планшеты до 768px */
-@media (max-width: 768px) {
-
-}
-
-/* Мобильные телефоны от 320px до 767px */
-@media (min-width: 320px) and (max-width: 767px) {
-
 }
