@@ -33,7 +33,7 @@
         font-weight: 700;
         line-height: 104%;
         text-transform: capitalize;
-        color: var(--acceny-color);
+        color: var(--accent-color);
     }
     &__slider-inner-link {
         display: flex;
@@ -75,7 +75,7 @@
         line-height: 40%;
         color: var(--white-color);
         &.active {
-            color: var(--acceny-color);
+            color: var(--accent-color);
         }
     }
     &__dots-item-text {
@@ -388,7 +388,7 @@
             padding: 20px 0 6px 0;
             // max-width: 288px;
             max-width: clamp(288px, calc(100vw - 72px), 695px);
-            border-bottom: 1px solid var(--acceny-color);
+            border-bottom: 1px solid var(--accent-color);
         }
         &__dots-list {
             gap: 28px;

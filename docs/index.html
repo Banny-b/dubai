@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="" type="image/x-icon">
+    <link rel="icon" href="./images/favicon.png" type="image/x-icon">
     <title>Dubai</title>
     <link rel="stylesheet" href="./libs/slick/slick.css">
     <link rel="stylesheet" href="./css/main.css">
@@ -205,9 +205,73 @@
         </div>
       </div>
     </section>
+    <section class="projects"> 
+      <div class="projects__container"> 
+        <div class="projects__upper"> 
+          <div class="projects__title">Latest projects</div>
+          <nav class="projects__navi"> 
+            <ul class="projects__navi-list"> 
+              <li class="projects__navi-item"><a class="projects__navi-link active" href="">All</a></li>
+              <li class="projects__navi-item"><a class="projects__navi-link" href="">Building</a></li>
+              <li class="projects__navi-item"><a class="projects__navi-link" href="">Interior</a></li>
+              <li class="projects__navi-item"><a class="projects__navi-link view" href="">View all projects</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="projects__slider"> 
+          <div class="projects__slider-item"> 
+            <picture>
+              <source srcset="../images/projects/image-1-1920.jpg" media="(min-width: 1200px)">
+              <source srcset="../images/projects/image-1-768.jpg" media="(min-width: 768px)">
+              <source srcset="../images/projects/image-1-360.jpg" media="(max-width: 767px)"><img class="hero__slider-inner-img" src="../images/projects/image-1-1920.jpg" alt="Project image">
+            </picture>
+            <h3 class="projects__slider-item-title">Villas</h3>
+          </div>
+          <div class="projects__slider-item"> 
+            <div class="projects__slider-item-wrapper">
+              <h3 class="projects__slider-item-title-2">Dubai </h3>
+              <p class="projects__slider-item-text-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum voluptas distinctio quam sapiente magni modi nulla corrupti nam atque illum.</p>
+              <div class="projects__slider-item-inner"> <a class="projects__slider-item-link" href="">See project</a>
+                <svg class="projects__slider-item-arr" width="11px" height="20px"> 
+                  <use href="../images/projects/arrow-2.svg#icon-arrow-2"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="projects__slider-item"> 
+            <picture>
+              <source srcset="../images/projects/image-2-1920.jpg" media="(min-width: 1200px)">
+              <source srcset="../images/projects/image-2-768.jpg" media="(min-width: 768px)">
+              <source srcset="../images/projects/image-2-360.jpg" media="(max-width: 767px)"><img class="hero__slider-inner-img" src="../images/projects/image-2-1920.jpg" alt="Project image">
+            </picture>
+            <h3 class="projects__slider-item-title">Houses </h3>
+          </div>
+          <div class="projects__slider-item"> 
+            <picture>
+              <source srcset="../images/projects/image-3-1920.jpg" media="(min-width: 1200px)">
+              <source srcset="../images/projects/image-3-768.jpg" media="(min-width: 768px)">
+              <source srcset="../images/projects/image-3-360.jpg" media="(max-width: 767px)"><img class="hero__slider-inner-img" src="../images/projects/image-3-1920.jpg" alt="Project image">
+            </picture>
+            <h3 class="projects__slider-item-title">Villas</h3>
+          </div>
+          <div class="projects__slider-item"> 
+            <div class="projects__slider-item-wrapper">
+              <h3 class="projects__slider-item-title-2">Dubai </h3>
+              <p class="projects__slider-item-text-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum voluptas distinctio quam sapiente magni modi nulla corrupti nam atque illum.</p>
+              <div class="projects__slider-item-inner"> <a class="projects__slider-item-link" href="">See project</a>
+                <svg class="projects__slider-item-arr" width="11px" height="20px"> 
+                  <use href="../images/projects/arrow-2.svg#icon-arrow-2"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
     <script src="./libs/slick/slick.min.js"> </script>
+    <script src="./js/navSelect.js"></script>
     <script src="./js/heroSlider.js"> </script>
-    <script src="./js/navSelect.js"> </script>
+    <script src="./js/projectsSlider.js"> </script>
   </body>
 </html>
