@@ -1,0 +1,258 @@
+.apartments {
+    background: var(--dark-color);
+    width: 100%;
+    &__container {
+        margin: 0 auto;
+    }
+    &__subtext {
+        font-family: var(--first-family);
+        font-weight: 600;
+        line-height: 160%;
+        color: var(--accent-color);
+    }
+    &__title {
+        font-family: var(--second-family);
+        font-weight: 700;
+        line-height: 99%;
+        color: var(--white-2);
+    }
+    &__text {
+        font-family: var(--first-family);
+        font-weight: 400;
+        line-height: 160%;
+        color: var(--white-2);
+    }
+    &__video {
+        background-image: url(../images/apartments/screensaver.png);
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+    }
+    &__video-content {
+        display: none;
+    }
+    #apartment-video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Для соответствия фону */
+    }
+    &__quote {
+        border: 1px solid var(--accent-color);
+        margin-right: auto;
+        margin-left: auto;
+    }
+    &__quote-text {
+        font-family: var(--second-family);
+        font-weight: 400;
+        line-height: 160%;
+        color: var(--white-color);
+    }
+    &__quote-author {
+        font-family: var(--second-family);
+        font-weight: 400;
+        line-height: 160%;
+        color: var(--accent-color);
+    }
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__item-pic-1 {
+        background-position: center;
+        background-size: cover;
+    }
+    &__item-pic-2 {
+        background-position: center;
+        background-size: cover;
+    }
+    &__item-txt {
+        font-family: var(--first-family);
+        font-weight: 400;
+        line-height: 160%;
+        color: var(--white-2);
+    }
+}
+
+/* Десктопы */
+@media (min-width: 1200px) and (max-width: 1920px) {
+    .apartments {
+        padding: 70px 60px 115px 60px;
+        &__container {
+            max-width: 1800px;
+        }
+        &__upper {
+            margin: 0 auto;
+            max-width: 730px;
+            margin-bottom: 89px;
+        }
+        &__subtext {
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+        &__title {
+            font-size: 70px;
+            margin-bottom: 33px;
+        }
+        &__text {
+            font-size: 18px;
+        }
+        &__video {
+            height: 921px;
+            margin-bottom: 119px;
+        }
+        &__quote {
+            padding: 68px 94px;
+            max-width: 1106px; // 918px
+            margin-bottom: 64px;
+        }
+        &__quote-text {
+            font-size: 30px;
+        }
+        &__quote-author {
+            font-size: 30px;
+        }
+        &__list {
+            gap: 23px;
+        }
+        &__item {
+            max-width: 543px;
+            min-height: 788px;
+        }
+        &__item-pic-1 {
+            background-image: url(../images/apartments/apart-1.png);
+            height: 312px;
+            margin-bottom: 70px;
+        }
+        &__item-pic-2 {
+            background-image: url(../images/apartments/apart-2.png);
+            height: 312px;
+            margin-bottom: 70px;
+        }
+        &__item-txt {
+            font-size: 18px;
+        }
+    }
+}
+
+/* Планшеты */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .apartments {
+        padding: 70px 40px 70px 40px;
+        &__container {
+            max-width: 1199px; // 696px
+        }
+        &__upper {
+            max-width: 1199px; // 696px
+            margin-bottom: 70px;
+        }
+        &__subtext {
+            font-size: 16px;
+            margin-bottom: 14px;
+        }
+        &__title {
+            font-size: 30px;
+            margin-bottom: 23px;
+        }
+        &__text {
+            font-size: 14px;
+        }
+        &__video {
+            height: 394px;
+            margin-bottom: 70px;
+        }
+        &__quote {
+            padding: 37px 58px;
+            max-width: 690px;
+            margin-bottom: 70px;
+        }
+        &__quote-text {
+            font-size: 18px;
+        }
+        &__quote-author {
+            font-size: 18px;
+        }
+        &__list {
+            gap: 30px;
+        }
+        &__item {
+            max-width: 336px;
+            min-height: 620px;
+        }
+        &__item-pic-1 {
+            background-image: url(../images/apartments/apart-3.png);
+            height: 194px;
+            margin-bottom: 30px;
+        }
+        &__item-pic-2 {
+            background-image: url(../images/apartments/apart-4.png);
+            height: 194px;
+            margin-bottom: 30px;
+        }
+        &__item-txt {
+            font-size: 14px;
+        }
+    }
+}
+
+/* Мобильные телефоны */
+@media (min-width: 360px) and (max-width: 767px) {
+    .apartments {
+        padding: 70px 36px 40px 36px;
+        &__container {
+            max-width: 767px; // 691px
+        }
+        &__upper {
+            max-width: 767px; // 691px
+            margin-bottom: 40px;
+        }
+        &__subtext {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        &__title {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        &__text {
+            font-size: 14px;
+        }
+        &__video {
+            height: 185px;
+            margin-bottom: 40px;
+        }
+        &__quote {
+            padding: 22px 24px;
+            max-width: 288px;
+            margin-bottom: 40px;
+        }
+        &__quote-text {
+            font-size: 16px;
+        }
+        &__quote-author {
+            font-size: 16px;
+        }
+        &__list {
+            flex-direction: column;
+            gap: 20px;
+        }
+        &__item {
+            max-width: 288px;
+        }
+        &__item-pic-1 {
+            background-image: url(../images/apartments/apart-3.png);
+            height: 194px;
+            margin-bottom: 20px;
+        }
+        &__item-pic-2 {
+            background-image: url(../images/apartments/apart-4.png);
+            height: 194px;
+            margin-bottom: 20px;
+        }
+        &__item-txt {
+            font-size: 14px;
+        }
+    }
+}
