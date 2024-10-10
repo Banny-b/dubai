@@ -1,0 +1,60 @@
+// Copyright
+.bottom {
+    background: var(--dark-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__copyright {
+        font-family: var(--third-family);
+        font-weight: 300;
+        line-height: 160%;
+        color: var(--white-2);
+    }
+    &__social {
+        display: flex;
+    }
+}
+
+/* Десктопы */
+@media (min-width: 1200px) and (max-width: 1920px) {
+    .bottom {
+        max-width: 1920px;
+        padding: 30px 60px 30px 60px;
+        &__copyright {
+            font-size: 18px;
+        }
+        &__social {
+            gap: 28px;
+        }
+    }
+}
+
+/* Планшеты */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .bottom {
+        max-width: 1199px;
+        padding: 35px 36px 35px 36px;
+        &__copyright {
+            font-size: 12px;
+        }
+        &__social {
+            gap: 31px;
+        }
+    }
+}
+
+/* Мобильные телефоны */
+@media (min-width: 360px) and (max-width: 767px) {
+    .bottom {
+        max-width: 767px;
+        padding: 22px 0 22px 0;
+        flex-direction: column-reverse;
+        &__copyright {
+            font-size: 12px;
+        }
+        &__social {
+            gap: 31px;
+            margin-bottom: 10px;
+        }
+    }
+}

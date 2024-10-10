@@ -1,0 +1,39 @@
+.area {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    opacity: 0.9;
+    &__message {
+        color: red;
+        font-size: 28px;
+        text-align: center;
+    }
+}
+
+/* Для экранов до 359px и менее */
+@media (max-width: 359px) {
+    .area {
+        display: flex;
+    }
+}
+
+/* Для экранов от 1921px и более */
+@media (min-width: 1921px) {
+    .area {
+        display: flex;
+    }
+}
+
+/* Для экранов от 360px до 1920px */
+@media (min-width: 360px) and (max-width: 1920px) {
+    .area {
+        display: none;
+    }
+}
