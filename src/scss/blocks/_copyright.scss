@@ -26,6 +26,12 @@
         &__social {
             gap: 28px;
         }
+        &__social-img {
+            transition: 0.3s ease-in-out;
+            &:hover {
+                opacity: 0.6;
+            }
+        }
     }
 }
 

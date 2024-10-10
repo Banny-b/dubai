@@ -109,6 +109,10 @@
         }
         &__submenu-link {
             font-size: 18px;
+            transition: 0.3s ease-in-out;
+            &:hover {
+                text-decoration: underline;
+            }
         }
         &__contact {
             flex-direction: column;
@@ -127,12 +131,21 @@
         &__contact-mail {
             font-size: 18px;
             padding-top: 10px;
+            transition: 0.3s ease-in-out;
+            &:hover {
+                text-decoration: underline;
+            }
         }
         &__contact-btn {
             font-size: 14px;
             width: 165px;
             height: 41px;
             padding: 12px 14px;
+            transition: 0.3s ease-in-out;
+            &:hover {
+                color: var(--white-color);
+                background: var(--yellow-2);
+            }
         }
     }
 }
