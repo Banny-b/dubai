@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
         video.pause();                                 // Останавливаем видео
         video.currentTime = 0;                         // Возвращаем видео в начало
         video.classList.add('apartments__video-content');                 // Скрываем видео
-        videoContainer.style.backgroundImage = 'url(../images/apartments/screensaver.png)'; // Возвращаем фоновую картинку
+        videoContainer.style.backgroundImage = 'url(./images/apartments/screensaver.png)'; // Возвращаем фоновую картинку
     }
 
     // Клик для начала воспроизведения
