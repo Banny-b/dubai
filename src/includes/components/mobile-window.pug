@@ -1,0 +1,29 @@
+.mobile-menu(id="mob-menu-window") 
+    .mobile-menu__content
+        .mobile-menu__container 
+            .mobile-menu__wrapper 
+                a.mobile-menu__logo(href="") 
+                    img.mobile-menu__logo-img(src="./images/header/logo.png" alt="Logo image") 
+                svg.mobile-menu__close(width="14", height="14") 
+                    use(href="./images/header/close.svg#close-icon", id="mob-menu-close")
+            nav.mobile-menu__nav 
+                ul.mobile-menu__nav-list 
+                    li.mobile-menu__nav-item
+                        button.mobile-menu__nav-link.active(href="", id="mob-buy-link") BUY 
+                            span.mobile-menu__nav-arrow
+                        section.mobile-menu__dropdown(id="mob-menu") 
+                            a.mobile-menu__dropdown-item(href="") Category number one
+                            a.mobile-menu__dropdown-item(href="") Apartments in Dubai
+                            a.mobile-menu__dropdown-item(href="") Category number twenty five
+                    li.mobile-menu__nav-item
+                        a.mobile-menu__nav-link(href="") BLOG
+                    li.mobile-menu__nav-item
+                        a.mobile-menu__nav-link(href="") ABOUT
+                    li.mobile-menu__nav-item
+                        a.mobile-menu__nav-link(href="") CONTACT
+            .mobile-menu__line 
+            a.mobile-menu__btn(href="") Book a consultation 
+            a.mobile-menu__phone(href="") +971 2 441 4666
+            .mobile-menu__switch 
+                button.mobile-menu__switch-lang.current EN 
+                button.mobile-menu__switch-lang UA

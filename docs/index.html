@@ -28,10 +28,37 @@
           <button class="header__switch-lang">UA</button>
         </div><a class="header__phone" href="">+971 2 441 4666</a>
         <svg class="header__burger" width="24" height="24"> 
-          <use href="./images/header/burger.svg#burger-icon"></use>
+          <use href="./images/header/burger.svg#burger-icon" id="mob-menu-open"></use>
         </svg>
       </div>
     </header>
+    <div class="mobile-menu" id="mob-menu-window"> 
+      <div class="mobile-menu__content">
+        <div class="mobile-menu__container"> 
+          <div class="mobile-menu__wrapper"> <a class="mobile-menu__logo" href=""> <img class="mobile-menu__logo-img" src="./images/header/logo.png" alt="Logo image"></a>
+            <svg class="mobile-menu__close" width="14" height="14"> 
+              <use href="./images/header/close.svg#close-icon" id="mob-menu-close"></use>
+            </svg>
+          </div>
+          <nav class="mobile-menu__nav"> 
+            <ul class="mobile-menu__nav-list"> 
+              <li class="mobile-menu__nav-item">
+                <button class="mobile-menu__nav-link active" href="" id="mob-buy-link">BUY <span class="mobile-menu__nav-arrow"></span></button>
+                <section class="mobile-menu__dropdown" id="mob-menu"> <a class="mobile-menu__dropdown-item" href="">Category number one</a><a class="mobile-menu__dropdown-item" href="">Apartments in Dubai</a><a class="mobile-menu__dropdown-item" href="">Category number twenty five</a></section>
+              </li>
+              <li class="mobile-menu__nav-item"><a class="mobile-menu__nav-link" href="">BLOG</a></li>
+              <li class="mobile-menu__nav-item"><a class="mobile-menu__nav-link" href="">ABOUT</a></li>
+              <li class="mobile-menu__nav-item"><a class="mobile-menu__nav-link" href="">CONTACT</a></li>
+            </ul>
+          </nav>
+          <div class="mobile-menu__line"> </div><a class="mobile-menu__btn" href="">Book a consultation </a><a class="mobile-menu__phone" href="">+971 2 441 4666</a>
+          <div class="mobile-menu__switch"> 
+            <button class="mobile-menu__switch-lang current">EN </button>
+            <button class="mobile-menu__switch-lang">UA</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <section class="hero"> 
       <div class="hero__container"> 
         <div class="hero__slider"> 
@@ -496,6 +523,7 @@
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
     <script src="./libs/slick/slick.min.js"> </script>
+    <script src="./js/mobileWindow.js"> </script>
     <script src="./js/navSelect.js"></script>
     <script src="./js/heroSlider.js"> </script>
     <script src="./js/projectsSlider.js"> </script>
